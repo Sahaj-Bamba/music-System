@@ -70,7 +70,7 @@ body
     font-size: 12px;
 }
 
-.box input[type="submit"]
+.box input[type="button"]
 {
     background: transparent;
     border: none;
@@ -80,4 +80,11 @@ body
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
+}
+
+#response
+{
+    font-size: 25px;
+    font-color: #03a9f4;
+    text-align: center;
 }
