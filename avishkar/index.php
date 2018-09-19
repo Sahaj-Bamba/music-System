@@ -1,41 +1,74 @@
+<?php 
+
+  include 'connection.php';
+  include 'Vars.php';
+
+?>
+
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
-    <head>
-        <title>The Lifestyle Store</title>
-        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-        
-        <script type="text/javascript" src="bootstrap/js/jquery-3.3.1.min.js"></script>
-        
-        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-        
-        <link rel="stylesheet" type="text/css" href="style.css">
-        
-    </head>
-    <body>
-       
-        <div class="container-fluid" id="container">
-            
-            <div class="row">
-            <div id="login">
-                    <p>Already have an account? <b>Log In</b></p>
-            </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-lg-4">
-                </div>
-                <div class="col-lg-6" id="facebook">
-                    <img src="facebook.jpg" height="50">
-                </div>
-            </div>
-        </div>
-        
-            
-        
-    </body>
+<head>
+    <title> Gen Next </title>
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="style/index.css">   <!--    Add for animation which we will add later-->
+
+  <script type="text/javascript" src="javascript/index.js"></script>
+</head>
+<body style="background-image: url('background.jpg');">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <!--  Button for collapse of main nav bar  -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-bar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">      Music       </a>
+    </div>
+    <div class="collapse navbar-collapse" id="main-nav-bar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li ><a href="#">Hot</a></li>
+        <li ><a href="#">Categories</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right" >
+        <li><a href="Signup_.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+    
+    <!--
+    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Page 1-1</a></li>
+          <li><a href="#">Page 1-2</a></li>
+          <li><a href="#">Page 1-3</a></li>
+        </ul>
+    </li>
+    -->
+    <!--  
+    <ul class="nav navbar-nav navbar-right " style="width: 190px; position: absolute; top: 0px; right: 0px;">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+    -->
+  
+  </div>
+</nav>
+<div class="container-fluid main">
+  <div id="initial_animation">
+      
+  </div>
+</div>
+
+</body>
 </html>

@@ -12,7 +12,7 @@
 
     if(isset($_POST['login'])) //if login variable is set we will  then accept the data
     {
-        $con= mysqli_connect("localhost", "root", "", "music");
+        $con= mysqli_connect("localhost", "root", "Gen123@", "music");
         $username=mysqli_real_escape_string($con,$_POST['usernamePHP']);    // we have to escape our data for protection
         $password=mysqli_real_escape_string($con,$_POST['passwordPHP']);
 
