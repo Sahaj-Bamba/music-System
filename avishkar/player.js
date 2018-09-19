@@ -27,8 +27,9 @@ function loadSong () {
 	nextSongTitle.innerHTML = "<b>Next Song -></b>" + songs[(currentSong + 1) % songs.length];
 	song.playbackRate = 1;
 	song.volume = volumeSlider.value;
+	setTimeout(showDuration,1000);
 	song.play();
-	setTimeout(showDuration , 1000); // this time limit is given to fix the song length
+	
 
 }
 
@@ -73,7 +74,7 @@ function playOrpause (img) {
 }
 
 
-function next () {
+function next() {
 	currentSong = (currentSong + 1) % songs.length;
 	loadSong();
 }
@@ -82,6 +83,7 @@ function previous () {
 	currentSong--;
 	currentSong = (currentSong < 0) ? songs.length-1 : currentSong ;
 	loadSong();
+
 
 }
 
