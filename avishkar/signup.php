@@ -118,7 +118,7 @@ if (strlen($password)<6||strlen($password)>15) {
 
   $password = md5($password);                             //   md5 encryption
 
-  $sql = "INSERT INTO user (username , password , email , phone_number , type  , bio) VALUES ('$name','$password','$email','$phone_number','$type', ' ' ) ;";
+  $sql = "INSERT INTO users (username , password , email , phone_number , type  , bio) VALUES ('$name','$password','$email','$phone_number','$type', ' ' ) ;";
 
   $con->query($sql);
 
