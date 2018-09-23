@@ -2,6 +2,7 @@
 
 include 'connection.php';
 include 'Vars.php'; 
+
 /*		Form validation					*/
 
 // define variables and set to empty values
